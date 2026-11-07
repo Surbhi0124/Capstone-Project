@@ -1,4 +1,4 @@
-# IIT Roorkee Agentic Systems Capstone — Support (Ola)
+#  Capstone — Support (Ola)
 
 **Selected track:** Ola (Business Operations / Customer Support)  
 **Exact domain to enter in Question 1:** `Support`  
