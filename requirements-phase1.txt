@@ -1,0 +1,3 @@
+# Phase 1: synthetic ticket dataset and JSON policy knowledge base.
+# Uses Python standard library only (json, random, pathlib, unittest, etc.).
+# No third-party dependencies required.

@@ -1,0 +1,3 @@
+# Phase 3A: ticket lookup, deterministic mock engine, and guardrails.
+# Phase 3A uses Python standard library and the Phase 2 RAG dependencies.
+-r requirements-phase2.txt

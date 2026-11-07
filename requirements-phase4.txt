@@ -1,0 +1,3 @@
+-r requirements-phase3b.txt
+# LangChain session memory is part of the assignment/syllabus.
+langchain-core>=0.3,<2

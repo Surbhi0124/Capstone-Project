@@ -1,0 +1,4 @@
+-r requirements-phase2.txt
+# CrewAI was covered in the syllabus (Module 4). Install before offline use.
+crewai>=1.0,<2
+pydantic>=2,<3

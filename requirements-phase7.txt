@@ -1,0 +1,3 @@
+# Phase 7: final submission checks and E03 reranking regression tests.
+# No additional third-party packages beyond Phase 6.
+-r requirements-phase6.txt

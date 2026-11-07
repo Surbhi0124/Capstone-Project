@@ -1,0 +1,5 @@
+-r requirements-phase5.txt
+# AutoGen AgentChat (new Microsoft AutoGen API) and built-in offline replay model client.
+autogen-agentchat>=0.5,<0.8
+autogen-ext>=0.5,<0.8
+autogen-core>=0.5,<0.8

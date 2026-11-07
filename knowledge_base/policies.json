@@ -1,0 +1,74 @@
+[
+  {
+    "doc_id": "POL-01",
+    "topic": "ticket-priority classification rules",
+    "title": "Ticket Priority Classification",
+    "content": "Tickets are assigned Critical, High, Medium, or Low priority based on customer impact and service disruption. Critical means immediate safety concern or widespread service unavailability, while High means a single customer cannot use a core feature. Medium covers partial inconvenience and Low covers routine information requests. Support staff record the reason for each priority assignment."
+  },
+  {
+    "doc_id": "POL-02",
+    "topic": "SLA-by-severity policy",
+    "title": "Response and Resolution SLA",
+    "content": "Critical tickets receive an initial response within 15 minutes and a target resolution within 4 hours. High tickets receive an initial response within 1 hour and a target resolution within 12 hours. Medium tickets target 4 hours for first response and 48 hours for resolution. Low tickets target 1 business day for first response and 72 hours for resolution. These are illustrative service targets, not guarantees."
+  },
+  {
+    "doc_id": "POL-03",
+    "topic": "escalation matrix",
+    "title": "Ticket Escalation Matrix",
+    "content": "Frontline support first investigates and documents the issue. Unresolved High-priority issues are escalated to a team lead, and Critical issues go immediately to the on-call incident manager. Payment disputes requiring specialized review are routed to the billing team. Each escalation must record the reason, timestamp, and receiving team."
+  },
+  {
+    "doc_id": "POL-04",
+    "topic": "refund/compensation policy",
+    "title": "Refund and Compensation Policy",
+    "content": "A customer can request a refund when a documented duplicate charge or service failure occurred. The billing team checks the related ticket and transaction evidence before deciding eligibility. Approved refunds are initiated to the original payment channel within five business days. Support agents cannot promise a refund before approval."
+  },
+  {
+    "doc_id": "POL-05",
+    "topic": "customer-communication-channel policy",
+    "title": "Customer Communication Channels",
+    "content": "Customers may contact support through the in-app help center or registered support email. Status updates should be sent through the same authenticated channel when practical. Agents must verify the requester before discussing account-specific information. Sensitive identifiers must not be echoed in public-facing replies."
+  },
+  {
+    "doc_id": "POL-06",
+    "topic": "business-hours/holiday-support policy",
+    "title": "Business Hours and Holiday Coverage",
+    "content": "Routine support operates from 9 AM to 6 PM India Standard Time on business days. Critical incidents are handled by an on-call team outside those hours. Public holidays may delay routine follow-up, but tickets remain in the queue. The next available shift reviews pending non-critical requests."
+  },
+  {
+    "doc_id": "POL-07",
+    "topic": "repeat-complaint-handling policy",
+    "title": "Repeated Complaint Handling",
+    "content": "When a customer reports the same unresolved issue again, support links the new contact to the original ticket. Repeated complaints are flagged for lead review when two earlier attempts failed to resolve the issue. The agent checks previous notes before requesting duplicate information. Resolutions must describe what changed since the previous response."
+  },
+  {
+    "doc_id": "POL-08",
+    "topic": "service-credit policy",
+    "title": "Service Credit Eligibility",
+    "content": "A discretionary service credit may be considered after a confirmed prolonged service outage. Credits require supervisor approval and cannot be issued automatically by the support agent. The approved amount and justification must be recorded with the affected ticket. Service credits are not interchangeable with cash refunds."
+  },
+  {
+    "doc_id": "POL-09",
+    "topic": "feedback-collection process",
+    "title": "Post-resolution Feedback",
+    "content": "After a ticket is marked Resolved or Closed, a customer may be invited to rate the experience. Feedback asks about clarity, speed, and whether the issue was solved. Low ratings are routed for quality review rather than changing the historical resolution status automatically. Participation is optional."
+  },
+  {
+    "doc_id": "POL-10",
+    "topic": "VIP-customer handling policy",
+    "title": "Priority Customer Handling",
+    "content": "Priority customers can receive a dedicated support queue when their account is eligible. Priority handling accelerates routing but does not override fraud checks, identity verification, or refund approvals. Agents follow the same confidentiality rules for every customer. The ticket records which priority-handling rule was applied."
+  },
+  {
+    "doc_id": "POL-11",
+    "topic": "outage-communication protocol",
+    "title": "Service Outage Communication",
+    "content": "For a confirmed service outage, the incident manager approves a customer-facing incident notice. The notice should state affected features, known impact, and the next update time. Support staff must avoid inventing a restoration estimate when engineering has not provided one. A final notice is sent after recovery is confirmed."
+  },
+  {
+    "doc_id": "POL-12",
+    "topic": "data-retention policy for tickets",
+    "title": "Ticket Data Retention",
+    "content": "Ticket records are retained for 180 days after closure in this fictional capstone policy. Access is restricted to staff with a legitimate support need. Customers can request a review of their stored data through the authenticated support channel. Retention exceptions require documented legal or security justification."
+  }
+]

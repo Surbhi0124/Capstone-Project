@@ -1,0 +1,17 @@
+[
+  {"id":"E01","query":"How are Critical and High support tickets prioritized?","expected_doc":"POL-01","required_phrases":["Critical","High"],"in_scope":true},
+  {"id":"E02","query":"What is the first response time for a critical support ticket?","expected_doc":"POL-02","required_phrases":["15 minutes","4 hours"],"in_scope":true},
+  {"id":"E03","query":"Who receives an unresolved high priority support issue?","expected_doc":"POL-03","required_phrases":["team lead"],"in_scope":true},
+  {"id":"E04","query":"Can I request a refund for a duplicate charge?","expected_doc":"POL-04","required_phrases":["duplicate charge"],"in_scope":true},
+  {"id":"E05","query":"Which channels can customers use to contact support?","expected_doc":"POL-05","required_phrases":["in-app help center","support email"],"in_scope":true},
+  {"id":"E06","query":"What are routine support hours on business days?","expected_doc":"POL-06","required_phrases":["9 AM","6 PM"],"in_scope":true},
+  {"id":"E07","query":"How are repeated unresolved customer complaints handled?","expected_doc":"POL-07","required_phrases":["original ticket"],"in_scope":true},
+  {"id":"E08","query":"When might customers qualify for service credits after an outage?","expected_doc":"POL-08","required_phrases":["supervisor approval"],"in_scope":true},
+  {"id":"E09","query":"How is feedback collected after a ticket is resolved?","expected_doc":"POL-09","required_phrases":["rate the experience"],"in_scope":true},
+  {"id":"E10","query":"How are VIP or priority customers handled?","expected_doc":"POL-10","required_phrases":["dedicated support queue"],"in_scope":true},
+  {"id":"E11","query":"Who approves customer outage communications?","expected_doc":"POL-11","required_phrases":["incident manager"],"in_scope":true},
+  {"id":"E12","query":"How long do you retain closed support tickets?","expected_doc":"POL-12","required_phrases":["180 days"],"in_scope":true},
+  {"id":"E13","query":"How many moons orbit Neptune?","expected_doc":null,"required_phrases":[],"in_scope":false},
+  {"id":"E14","query":"What is the recipe for sourdough rye bread?","expected_doc":null,"required_phrases":[],"in_scope":false},
+  {"id":"E15","query":"How should tomato seedlings be watered in a greenhouse?","expected_doc":null,"required_phrases":[],"in_scope":false}
+]

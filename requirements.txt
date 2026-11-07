@@ -1,0 +1,2 @@
+# Install all dependencies for the complete capstone (Phases 1-7).
+-r requirements-phase7.txt

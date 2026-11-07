@@ -1,0 +1,15 @@
+{
+  "in_scope": [
+    {"query": "What is the first response time for a critical ticket?", "relevant_docs": ["POL-02"]},
+    {"query": "How are tickets classified as Critical, High, Medium or Low priority?", "relevant_docs": ["POL-01"]},
+    {"query": "How can I get a refund for a duplicate charge?", "relevant_docs": ["POL-04"]},
+    {"query": "Who handles unresolved high priority issues and critical incidents?", "relevant_docs": ["POL-03"]},
+    {"query": "When is the support team available during public holidays?", "relevant_docs": ["POL-06"]},
+    {"query": "Can I get a service credit after a prolonged outage?", "relevant_docs": ["POL-08"]}
+  ],
+  "out_of_scope": [
+    {"query": "How many moons orbit the planet Neptune?", "relevant_docs": []},
+    {"query": "What is the recipe for sourdough bread with rye flour?", "relevant_docs": []},
+    {"query": "How do I grow tomato seedlings in a greenhouse?", "relevant_docs": []}
+  ]
+}

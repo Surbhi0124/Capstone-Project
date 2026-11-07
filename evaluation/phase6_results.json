@@ -1,0 +1,233 @@
+{
+  "mode": "MOCK_LLM",
+  "real_api_cost_usd": 0,
+  "judge_type": "deterministic_rule_based",
+  "judge_prompt": "You are an evidence-grounded support-agent judge. Evaluate ONLY\nagainst the provided expected policy ID, required phrases, source citations and\nfallback behavior. Return numeric scores: Accuracy, Grounding, Completeness,\nSafety in [0,1]. This capstone's MOCK_LLM implements this rubric as deterministic\nPython rather than relying on an external model. No claims about medical, legal,\nor real Ola policy are made.",
+  "cases": [
+    {
+      "id": "E01",
+      "query": "How are Critical and High support tickets prioritized?",
+      "expected_doc": "POL-01",
+      "answer": "Ticket Priority Classification. Tickets are assigned Critical, High, Medium, or Low priority based on customer impact and service disruption. Critical means immediate safety concern or widespread service unavailability, while High means a single customer cannot use a core feature.",
+      "sources": [
+        "POL-01"
+      ],
+      "error": null,
+      "duration_ms": 54367.67,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E02",
+      "query": "What is the first response time for a critical support ticket?",
+      "expected_doc": "POL-02",
+      "answer": "Response and Resolution SLA. Critical tickets receive an initial response within 15 minutes and a target resolution within 4 hours. High tickets receive an initial response within 1 hour and a target resolution within 12 hours.",
+      "sources": [
+        "POL-02"
+      ],
+      "error": null,
+      "duration_ms": 477.0,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E03",
+      "query": "Who receives an unresolved high priority support issue?",
+      "expected_doc": "POL-03",
+      "answer": "Ticket Escalation Matrix. Frontline support first investigates and documents the issue. Unresolved High-priority issues are escalated to a team lead, and Critical issues go immediately to the on-call incident manager.",
+      "sources": [
+        "POL-03"
+      ],
+      "error": null,
+      "duration_ms": 428.03,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E04",
+      "query": "Can I request a refund for a duplicate charge?",
+      "expected_doc": "POL-04",
+      "answer": "Refund and Compensation Policy. A customer can request a refund when a documented duplicate charge or service failure occurred. The billing team checks the related ticket and transaction evidence before deciding eligibility.",
+      "sources": [
+        "POL-04"
+      ],
+      "error": null,
+      "duration_ms": 487.29,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E05",
+      "query": "Which channels can customers use to contact support?",
+      "expected_doc": "POL-05",
+      "answer": "Customer Communication Channels. Customers may contact support through the in-app help center or registered support email. Status updates should be sent through the same authenticated channel when practical.",
+      "sources": [
+        "POL-05"
+      ],
+      "error": null,
+      "duration_ms": 734.99,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E06",
+      "query": "What are routine support hours on business days?",
+      "expected_doc": "POL-06",
+      "answer": "Business Hours and Holiday Coverage. Routine support operates from 9 AM to 6 PM India Standard Time on business days. Critical incidents are handled by an on-call team outside those hours.",
+      "sources": [
+        "POL-06"
+      ],
+      "error": null,
+      "duration_ms": 460.25,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E07",
+      "query": "How are repeated unresolved customer complaints handled?",
+      "expected_doc": "POL-07",
+      "answer": "Repeated Complaint Handling. When a customer reports the same unresolved issue again, support links the new contact to the original ticket. Repeated complaints are flagged for lead review when two earlier attempts failed to resolve the issue.",
+      "sources": [
+        "POL-07"
+      ],
+      "error": null,
+      "duration_ms": 458.05,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E08",
+      "query": "When might customers qualify for service credits after an outage?",
+      "expected_doc": "POL-08",
+      "answer": "Service Credit Eligibility. A discretionary service credit may be considered after a confirmed prolonged service outage. Credits require supervisor approval and cannot be issued automatically by the support agent.",
+      "sources": [
+        "POL-08"
+      ],
+      "error": null,
+      "duration_ms": 403.73,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E09",
+      "query": "How is feedback collected after a ticket is resolved?",
+      "expected_doc": "POL-09",
+      "answer": "Post-resolution Feedback. After a ticket is marked Resolved or Closed, a customer may be invited to rate the experience. Feedback asks about clarity, speed, and whether the issue was solved.",
+      "sources": [
+        "POL-09"
+      ],
+      "error": null,
+      "duration_ms": 458.66,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E10",
+      "query": "How are VIP or priority customers handled?",
+      "expected_doc": "POL-10",
+      "answer": "Priority Customer Handling. Priority customers can receive a dedicated support queue when their account is eligible. Priority handling accelerates routing but does not override fraud checks, identity verification, or refund approvals.",
+      "sources": [
+        "POL-10"
+      ],
+      "error": null,
+      "duration_ms": 419.25,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E11",
+      "query": "Who approves customer outage communications?",
+      "expected_doc": "POL-11",
+      "answer": "Service Outage Communication. For a confirmed service outage, the incident manager approves a customer-facing incident notice. The notice should state affected features, known impact, and the next update time.",
+      "sources": [
+        "POL-11"
+      ],
+      "error": null,
+      "duration_ms": 520.7,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E12",
+      "query": "How long do you retain closed support tickets?",
+      "expected_doc": "POL-12",
+      "answer": "Ticket Data Retention. Ticket records are retained for 180 days after closure in this fictional capstone policy. Access is restricted to staff with a legitimate support need.",
+      "sources": [
+        "POL-12"
+      ],
+      "error": null,
+      "duration_ms": 472.14,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E13",
+      "query": "How many moons orbit Neptune?",
+      "expected_doc": null,
+      "answer": "I don't know based on the available support policies.",
+      "sources": [],
+      "error": null,
+      "duration_ms": 488.29,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E14",
+      "query": "What is the recipe for sourdough rye bread?",
+      "expected_doc": null,
+      "answer": "I don't know based on the available support policies.",
+      "sources": [],
+      "error": null,
+      "duration_ms": 467.82,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    },
+    {
+      "id": "E15",
+      "query": "How should tomato seedlings be watered in a greenhouse?",
+      "expected_doc": null,
+      "answer": "I don't know based on the available support policies.",
+      "sources": [],
+      "error": null,
+      "duration_ms": 486.27,
+      "Accuracy": 1.0,
+      "Grounding": 1.0,
+      "Completeness": 1.0,
+      "Safety": 1.0
+    }
+  ],
+  "averages": {
+    "Accuracy": 1.0,
+    "Grounding": 1.0,
+    "Completeness": 1.0,
+    "Safety": 1.0
+  }
+}

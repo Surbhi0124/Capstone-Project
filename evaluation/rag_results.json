@@ -1,0 +1,360 @@
+{
+  "test_set": {
+    "in_scope": [
+      {
+        "query": "What is the first response time for a critical ticket?",
+        "relevant_docs": [
+          "POL-02"
+        ]
+      },
+      {
+        "query": "How are tickets classified as Critical, High, Medium or Low priority?",
+        "relevant_docs": [
+          "POL-01"
+        ]
+      },
+      {
+        "query": "How can I get a refund for a duplicate charge?",
+        "relevant_docs": [
+          "POL-04"
+        ]
+      },
+      {
+        "query": "Who handles unresolved high priority issues and critical incidents?",
+        "relevant_docs": [
+          "POL-03"
+        ]
+      },
+      {
+        "query": "When is the support team available during public holidays?",
+        "relevant_docs": [
+          "POL-06"
+        ]
+      },
+      {
+        "query": "Can I get a service credit after a prolonged outage?",
+        "relevant_docs": [
+          "POL-08"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "query": "How many moons orbit the planet Neptune?",
+        "relevant_docs": []
+      },
+      {
+        "query": "What is the recipe for sourdough bread with rye flour?",
+        "relevant_docs": []
+      },
+      {
+        "query": "How do I grow tomato seedlings in a greenhouse?",
+        "relevant_docs": []
+      }
+    ]
+  },
+  "strategies": {
+    "fixed": {
+      "threshold": 0.332257,
+      "clean_separation": true,
+      "in_scope": [
+        {
+          "query": "What is the first response time for a critical ticket?",
+          "top1_similarity": 0.700345,
+          "returned_docs": [
+            "POL-02",
+            "POL-03"
+          ],
+          "expected_docs": [
+            "POL-02"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "How are tickets classified as Critical, High, Medium or Low priority?",
+          "top1_similarity": 0.867536,
+          "returned_docs": [
+            "POL-01",
+            "POL-10"
+          ],
+          "expected_docs": [
+            "POL-01"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "How can I get a refund for a duplicate charge?",
+          "top1_similarity": 0.623787,
+          "returned_docs": [
+            "POL-04",
+            "POL-07"
+          ],
+          "expected_docs": [
+            "POL-04"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "Who handles unresolved high priority issues and critical incidents?",
+          "top1_similarity": 0.580097,
+          "returned_docs": [
+            "POL-03",
+            "POL-10",
+            "POL-01"
+          ],
+          "expected_docs": [
+            "POL-03"
+          ],
+          "tp": 1,
+          "retrieved": 3,
+          "relevant": 1,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        {
+          "query": "When is the support team available during public holidays?",
+          "top1_similarity": 0.549631,
+          "returned_docs": [
+            "POL-06",
+            "POL-05",
+            "POL-09"
+          ],
+          "expected_docs": [
+            "POL-06"
+          ],
+          "tp": 1,
+          "retrieved": 3,
+          "relevant": 1,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        {
+          "query": "Can I get a service credit after a prolonged outage?",
+          "top1_similarity": 0.757404,
+          "returned_docs": [
+            "POL-08",
+            "POL-11"
+          ],
+          "expected_docs": [
+            "POL-08"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        }
+      ],
+      "out_of_scope": [
+        {
+          "query": "How many moons orbit the planet Neptune?",
+          "top1_similarity": 0.114882,
+          "returned_docs": [
+            "POL-07",
+            "POL-09",
+            "POL-02"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 3,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "query": "What is the recipe for sourdough bread with rye flour?",
+          "top1_similarity": 0.037439,
+          "returned_docs": [
+            "POL-09",
+            "POL-02"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 2,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "query": "How do I grow tomato seedlings in a greenhouse?",
+          "top1_similarity": 0.064948,
+          "returned_docs": [
+            "POL-03",
+            "POL-06",
+            "POL-05"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 3,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "mean_document_precision_at_3": 0.4444,
+      "mean_document_recall_at_3": 1.0
+    },
+    "sentence": {
+      "threshold": 0.318916,
+      "clean_separation": true,
+      "in_scope": [
+        {
+          "query": "What is the first response time for a critical ticket?",
+          "top1_similarity": 0.717285,
+          "returned_docs": [
+            "POL-02",
+            "POL-03"
+          ],
+          "expected_docs": [
+            "POL-02"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "How are tickets classified as Critical, High, Medium or Low priority?",
+          "top1_similarity": 0.873656,
+          "returned_docs": [
+            "POL-01",
+            "POL-10"
+          ],
+          "expected_docs": [
+            "POL-01"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "How can I get a refund for a duplicate charge?",
+          "top1_similarity": 0.666557,
+          "returned_docs": [
+            "POL-04",
+            "POL-07"
+          ],
+          "expected_docs": [
+            "POL-04"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "Who handles unresolved high priority issues and critical incidents?",
+          "top1_similarity": 0.615129,
+          "returned_docs": [
+            "POL-03",
+            "POL-10",
+            "POL-01"
+          ],
+          "expected_docs": [
+            "POL-03"
+          ],
+          "tp": 1,
+          "retrieved": 3,
+          "relevant": 1,
+          "precision": 0.3333333333333333,
+          "recall": 1.0
+        },
+        {
+          "query": "When is the support team available during public holidays?",
+          "top1_similarity": 0.540839,
+          "returned_docs": [
+            "POL-06",
+            "POL-05"
+          ],
+          "expected_docs": [
+            "POL-06"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        },
+        {
+          "query": "Can I get a service credit after a prolonged outage?",
+          "top1_similarity": 0.775356,
+          "returned_docs": [
+            "POL-08",
+            "POL-11"
+          ],
+          "expected_docs": [
+            "POL-08"
+          ],
+          "tp": 1,
+          "retrieved": 2,
+          "relevant": 1,
+          "precision": 0.5,
+          "recall": 1.0
+        }
+      ],
+      "out_of_scope": [
+        {
+          "query": "How many moons orbit the planet Neptune?",
+          "top1_similarity": 0.096994,
+          "returned_docs": [
+            "POL-07",
+            "POL-02"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 2,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "query": "What is the recipe for sourdough bread with rye flour?",
+          "top1_similarity": 0.064839,
+          "returned_docs": [
+            "POL-02",
+            "POL-09"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 2,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        },
+        {
+          "query": "How do I grow tomato seedlings in a greenhouse?",
+          "top1_similarity": 0.063006,
+          "returned_docs": [
+            "POL-05",
+            "POL-06",
+            "POL-03"
+          ],
+          "expected_docs": [],
+          "tp": 0,
+          "retrieved": 3,
+          "relevant": 0,
+          "precision": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "mean_document_precision_at_3": 0.4722,
+      "mean_document_recall_at_3": 1.0
+    }
+  }
+}
